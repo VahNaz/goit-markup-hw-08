@@ -20,7 +20,7 @@
             <li class="head-item"><a class="nav-list__item link" href="">Контакт</a></li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-btn" data-menu-open>
+        <button type="button" class="mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="mobile-menu-btn__icon" width="40" height="40">
             <use href="./images/svg/sprite.svg#icon-menu"></use>
           </svg>
@@ -46,9 +46,9 @@
       </div>
 
           <!-- mobile menu -->
-    <div class="mobile-menu" data-menu>
+    <div class="mobile-menu js-menu" id="mobile-menu">
       <div class="container mobile-menu__container">
-        <button class="mobile-menu__close-btn" data-menu-close>
+        <button class="mobile-menu__close-btn js-close-menu">
           <svg class="mobile-menu__close-icon" width="40" height="40">
             <use href="./images/svg/sprite.svg#mobile-close-icon"></use>
           </svg>
@@ -83,12 +83,12 @@
     <main>
 
       <!-- Section 1 -->
-      <!-- <section class="title">
+      <section class="title">
         <div class="container">
           <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!--Section 2-->
       <!-- <section class="section-advantages">

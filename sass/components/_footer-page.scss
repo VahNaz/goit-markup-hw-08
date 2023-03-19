@@ -2,17 +2,20 @@
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+
 }
 
+
 .contact-box{
-    margin-top: 20px;
+    margin-top: 28px;
     width: 231px;
+    text-align: center;
 }
 
 .footer__contact {
     display: block;
     justify-content: center;
-    margin-right: 70px;
+    margin-bottom: 60px;
 }
 
 .address {
@@ -44,14 +47,13 @@
 
 
 .footer-container {
-    display: flex;
-    align-items: baseline;
+    display: block;
 }
 
 .join {
 display: block;
 justify-content: center;
-margin-right: 93px;
+margin-bottom: 60px;
 }
 
 .subscription {
@@ -60,10 +62,10 @@ display: block;
 }
 
 .subscription-email {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding-left: 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -96,7 +98,7 @@ display: block;
 }
 
 .subscription-block {
-    display: flex;
+    display: block;
 }
 
 .subscription-icon-send {
@@ -148,4 +150,41 @@ display: block;
     text-transform: uppercase;
     letter-spacing: 0.03em;
 
+}
+
+
+
+// 768px+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+
+// 1200px+
+@media screen and (min-width: 1200px) {
+    .footer__contact {
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
+
+    .subscription-block {
+        display: flex;
+    }
+
+    .join {
+        margin-right: 93px;
+        }
+
+    .subscription-email {
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
+
+    .contact-box {
+        text-align: left;
+    }
 }

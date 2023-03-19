@@ -1,12 +1,19 @@
 .title {
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.main.jpg");
-    // background-repeat: no-repeat;
-    max-width: 480px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-main.jpg");
+    background-position: center;
+    background-size: cover;
     margin: 0px auto;
     padding-top: 118px;
     padding-bottom: 118px;
     justify-content: center;
     background-color: #2F303A;
+
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .title {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-main@2x.jpg");
+    }
 }
 
 .main-title {
@@ -20,12 +27,50 @@
 
     width: 360px;
     height: 84px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
 }
 
 
+// 768px+
+@media screen and (min-width: 768px) {
+    .title {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-main-tablet.jpg");
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .title {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-main-tablet@2x.jpg");
+        }
+
+    }
+}
+
+
+// 1200px+
+@media screen and (min-width: 1200px) {
+    .title {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-main-desktop.jpg");
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .title {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-main-desktop@2x.jpg");
+        }
+
+    }
+
+    .main-title {
+    font-size: 44px;
+    line-height: 1.36;
+
+    width: 700px;
+    height: 120px;
+
+}
+
+}
 
 
 
@@ -44,7 +89,6 @@
 //     justify-content: center;
 //     background-color: #2F303A;
 // }
-
 
 // .main-title {
 //     color: var(--dark-theme-text-color);

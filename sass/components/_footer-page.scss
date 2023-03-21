@@ -10,12 +10,15 @@
     margin-top: 28px;
     width: 231px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer__contact {
     display: block;
     justify-content: center;
     margin-bottom: 60px;
+    text-align: center;
 }
 
 .address {
@@ -62,10 +65,13 @@ display: block;
 }
 
 .subscription-email {
+    display: block;
     width: 450px;
     height: 50px;
     padding-left: 16px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -133,6 +139,7 @@ display: block;
 
 .footer__social-list {
     display: flex;
+    justify-content: center;
 
 }
 
@@ -149,6 +156,7 @@ display: block;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    text-align: center;
 
 }
 
@@ -156,15 +164,23 @@ display: block;
 
 // 768px+
 @media screen and (min-width: 768px) {
-    .footer-container {
+    .footer__contact-social {
         display: flex;
-        align-items: baseline;
+    }
+
+    .footer__contact {
+        margin-right: 165px;
     }
 }
 
 
 // 1200px+
 @media screen and (min-width: 1200px) {
+        .footer-container {
+        display: flex;
+        align-items: baseline;
+    }
+
     .footer__contact {
         margin-right: 70px;
         margin-bottom: 0;

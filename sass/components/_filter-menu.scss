@@ -23,10 +23,33 @@
 
 
 .filter-list{
-    justify-content: center;
+    justify-content:left;
     margin-bottom: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.filter-list__item:not(:last-child) {
+.filter-list__item {
     margin-right: 8px;
+    margin-bottom: 15px;
+
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+
+    // &:nth-last-child(-n+2){
+    //     margin-bottom: 0;
+    // }
+}
+
+// 768px+
+@media screen and (min-width: 768px) {
+    .filter-list {
+        justify-content: center;
+    }
+
+    .filter-list__item:not(:last-child) {
+        margin-right: 8px;
+    }
 }

@@ -1200,17 +1200,14 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .portfolio-list .portfolio-list__item {
+  .portfolio-list__item {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
   }
-  .portfolio-list .portfolio-list__item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .portfolio-list .portfolio-list__item:nth-last-child(-n+2) {
+  .portfolio-list__item:nth-last-child(-n+2) {
     margin-bottom: 0;
   }
-  .portfolio-list .portfolio-list__item .desc-title {
+  .portfolio-list__item .desc-title {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;

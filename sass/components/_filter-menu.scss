@@ -30,23 +30,22 @@
     flex-wrap: wrap;
 }
 
-.filter-list__item {
-    margin-right: 8px;
-    margin-bottom: 15px;
-
-    &:nth-child(3n){
-        margin-right: 0;
+    .filter-list__item {
+        width:calc((100% - 16px) / 3);
+        margin-right: 8px;
+        margin-bottom: 15px;
+    
+        &:nth-child(3n){
+            margin-right: 0;
+        }
     }
 
-    // &:nth-last-child(-n+2){
-    //     margin-bottom: 0;
-    // }
-}
 
 // 768px+
 @media screen and (min-width: 768px) {
     .filter-list {
         justify-content: center;
+        flex-wrap: nowrap;
     }
 
     .filter-list__item:not(:last-child) {

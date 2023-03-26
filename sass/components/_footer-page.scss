@@ -9,7 +9,6 @@
 .contact-box{
     margin-top: 28px;
     width: 231px;
-    text-align: center;
     margin-right: auto;
     margin-left: auto;
 }
@@ -18,8 +17,19 @@
     display: block;
     justify-content: center;
     margin-bottom: 60px;
-    text-align: center;
 }
+
+// max 1199px
+@media screen and (max-width: 1199px) {
+    .contact-box {
+        text-align: center;
+    }
+
+    .footer__contact {
+        text-align: center;
+    }
+}
+
 
 .address {
     font-style: normal;
@@ -200,7 +210,4 @@ display: block;
         margin-bottom: 0;
     }
 
-    .contact-box {
-        text-align: left;
-    }
 }
